@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=arrow_forward" />
+    <!-- SWIPER -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=shopping_cart" />
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>location</title>
+    <style>
+  
+    </style>
+  </head>
+  <body>
+    <!-- header -->
+     <div class=" header-fixed">
+     <div class="container" >
+    <div class=" mx-auto d-flex align-items-center justify-content-between py-4" >
+      <nav class="d-flex flex-1 align-items-center " >
+          <a  href="index.html" >
+          <img src="https://hex2025-f2e-live-week7and8.pages.dev/primary-logo.svg" alt="Logo" style="max-width: 180px;" >
+          </a>
+          <div class="d-lg-flex justify-content-center align-items-center bg-neutral-0 px-3 py-2 ms-4 d-none d-lg-block" >
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" class="absolute left-3 top-1/2 -translate-y-1/2" >
+          <path d="m19.6 21-6.3-6.3q-.75.6-1.725.95T9.5 16q-2.725 0-4.612-1.887T3 9.5t1.888-4.612T9.5 3t4.613 1.888T16 9.5a6.1 6.1 0 0 1-1.3 3.8l6.3 6.3zM9.5 14q1.875 0 3.188-1.312Q14 11.375 14 9.5t-1.312-3.187T9.5 5 6.313 6.313 5 9.5t1.313 3.188T9.5 14" fill="#909090" ></path>
+          </svg>
+          <input value="" type="search" placeholder="搜尋景點、地點或城市" class="form-control shadow-none border-0" >
+          </div>
+          
+     </nav>
+  <div class="d-flex justify-content-center align-items-center" >
+        <a href="#" class="search-BOX d-block d-lg-none p-2 text-neutral transition hover:text-black sm:hidden" aria-label="展開搜尋" >
+
+         <div class="d-md-none">
+      <input type="checkbox" id="search-toggle" class="d-none">
+
+      <!-- 🔍 放大鏡 ICON -->
+      <label for="search-toggle" class="btn p-0 border-0 bg-transparent">
+        <svg width="24" height="24" fill="black" viewBox="0 0 24 24">
+          <path d="M21 21l-4.35-4.35M17 10a7 7 0 11-14 0 7 7 0 0114 0z"
+                stroke="black" stroke-width="2" fill="none"/>
+        </svg>
+      </label>
+
+      <!-- 搜索框（會覆蓋整個導覽列） -->
+      <div class="search-overlay">
+        <div class="container d-flex align-items-center py-2">
+          <input type="text" class="form-control border-0 shadow-none fs-5"
+                 placeholder="搜尋景點、地點或城市">
+          <!-- ❌ 關閉 -->
+          <label for="search-toggle" class="ms-2">
+            <svg width="24" height="24" viewBox="0 0 24 24">
+              <path d="M18 6L6 18M6 6l12 12" stroke="black" stroke-width="2"/>
+            </svg>
+          </label>
+        </div>
+      </div>
+    </div>
+        </a>
+      <a href="location.html" class="relative  px-3 py-2 text-neutral transition hover:text-black" type="button" aria-label="購物車" >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" >
+        <path d="M8.002 22q-.825 0-1.413-.587A1.93 1.93 0 0 1 6.001 20q0-.825.588-1.413A1.93 1.93 0 0 1 8.002 18q.825 0 1.412.587.588.588.588 1.413t-.588 1.413A1.93 1.93 0 0 1 8.002 22m10.003 0q-.825 0-1.413-.587A1.93 1.93 0 0 1 16.004 20q0-.825.588-1.413A1.93 1.93 0 0 1 18.005 18q.825 0 1.413.587.587.588.587 1.413t-.587 1.413a1.93 1.93 0 0 1-1.413.587M7.152 6l2.4 5h7.002l2.751-5zm-.95-2h14.754q.675 0 .925.5t-.025 1.05l-3.551 6.4a2.04 2.04 0 0 1-.725.775q-.45.275-1.026.275H9.102l-1.1 2h12.003v2H8.002q-1.125 0-1.7-.988-.575-.987-.05-1.962l1.35-2.45L4 4H2V2h3.251z" fill="currentColor" ></path>
+      </svg>
+    </a>
+    <a href="#" type="button" class="d-none d-lg-block btn bg-primary custom-btn text-center text-white rounded-16 py-4 px-7 " >
+       登入 / 註冊
+       </a>
+       <a  class="d-block d-lg-none block p-2 text-neutral transition hover:text-black md:hidden" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight" aria-label="開啟 Off canvas 選單" >
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+         <path d="M20.05 11H3.95C3.42533 11 3 11.4253 3 11.95V12.05C3 12.5747 3.42533 13 3.95 13H20.05C20.5747 13 21 12.5747 21 12.05V11.95C21 11.4253 20.5747 11 20.05 11Z" fill="black"/>
+         <path d="M20.05 16H3.95C3.42533 16 3 16.4253 3 16.95V17.05C3 17.5747 3.42533 18 3.95 18H20.05C20.5747 18 21 17.5747 21 17.05V16.95C21 16.4253 20.5747 16 20.05 16Z" fill="black"/>
+         <path d="M20.05 6H3.95C3.42533 6 3 6.42533 3 6.95V7.05C3 7.57467 3.42533 8 3.95 8H20.05C20.5747 8 21 7.57467 21 7.05V6.95C21 6.42533 20.5747 6 20.05 6Z" fill="black"/>
+         </svg>
+       </a> 
+       <!-- small -->
+        <div class="offcanvas offcanvas-end p-6" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+          <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+       </div>
+       <div class="offcanvas-body">
+        <div class="d-flex align-items-center border-line  pb-4 mb-5">
+          <div>
+            <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<circle cx="16" cy="16" r="16" fill="#CBB6AF"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 13C20 14.0609 19.5786 15.0783 18.8284 15.8284C18.0783 16.5786 17.0609 17 16 17C14.9391 17 13.9217 16.5786 13.1716 15.8284C12.4214 15.0783 12 14.0609 12 13C12 11.9391 12.4214 10.9217 13.1716 10.1716C13.9217 9.42143 14.9391 9 16 9C17.0609 9 18.0783 9.42143 18.8284 10.1716C19.5786 10.9217 20 11.9391 20 13ZM18 13C18 13.5304 17.7893 14.0391 17.4142 14.4142C17.0391 14.7893 16.5304 15 16 15C15.4696 15 14.9609 14.7893 14.5858 14.4142C14.2107 14.0391 14 13.5304 14 13C14 12.4696 14.2107 11.9609 14.5858 11.5858C14.9609 11.2107 15.4696 11 16 11C16.5304 11 17.0391 11.2107 17.4142 11.5858C17.7893 11.9609 18 12.4696 18 13Z" fill="#F3EEEC"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M16 5C9.925 5 5 9.925 5 16C5 22.075 9.925 27 16 27C22.075 27 27 22.075 27 16C27 9.925 22.075 5 16 5ZM7 16C7 18.09 7.713 20.014 8.908 21.542C9.74723 20.4399 10.8299 19.5467 12.0714 18.9323C13.313 18.3179 14.6797 17.9988 16.065 18C17.4323 17.9987 18.7819 18.3095 20.0109 18.9088C21.2399 19.508 22.316 20.3799 23.157 21.458C24.0234 20.3216 24.6068 18.9952 24.8589 17.5886C25.111 16.182 25.0244 14.7355 24.6065 13.369C24.1886 12.0024 23.4512 10.755 22.4555 9.73004C21.4598 8.70503 20.2343 7.93186 18.8804 7.47451C17.5265 7.01716 16.0832 6.88877 14.6699 7.09997C13.2565 7.31117 11.9138 7.85589 10.7528 8.68905C9.59175 9.52222 8.64581 10.6199 7.99323 11.8912C7.34065 13.1625 7.00018 14.571 7 16ZM16 25C13.9339 25.0031 11.9303 24.2923 10.328 22.988C10.9729 22.0647 11.8313 21.3109 12.8302 20.7907C13.829 20.2705 14.9388 19.9992 16.065 20C17.1772 19.9991 18.2735 20.2636 19.2629 20.7714C20.2524 21.2793 21.1064 22.0159 21.754 22.92C20.1393 24.2667 18.1026 25.0029 16 25Z" fill="#F3EEEC"/>
+</svg>
+
+          </div>
+          <div class="ms-4">
+            <p class="fw-bold text-primary mb-0">訪客</p>
+            <p class="text-neutral-80 mb-0">未登入</p>
+          </div>
+        </div>
+        <div>
+          <p class="fw-bold fs-5 ln-12 text-primary"> 歡迎來到 ZOBAA</p>
+          <p class="text-neutral-80">加入會員即可立即訂購、收藏行程，並享相關優惠好禮。</p>
+        </div>
+       </div>
+       <div>
+       <a href="#" type="button" class=" d-block  bg-primary custom-btn text-center text-white rounded-16 py-4 px-7 text-decoration-none " >
+       登入 / 註冊
+       </a>
+      </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+    <!-- sect1 -->
+     <div style="padding-bottom: 120px; padding-top: 120px;">
+      <div class="container">
+        <nav aria-label="breadcrumb"  class="py-6">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="index.html" class="text-decoration-none text-primary">首頁</a></li>
+    <li class="breadcrumb-item"><a href="index.html"  class="text-decoration-none text-primary">日本</a></li>
+    <li class="breadcrumb-item"><a href="index.html"  class="text-decoration-none text-primary">關西</a></li>
+    <li class="breadcrumb-item active t" aria-current="page"  class="text-decoration-none text-neutral-80">大阪</li>
+  </ol>
+        </nav>
+        <p class="fw-bold fs-1 text-neutral-100 ln-12">大阪</p>
+        <p class="text-neutral-80 p-4">大阪，一座融合傳統與現代的城市，擁有豐富的歷史文化、熱鬧的購物街區與世界知名的美食天堂。從氣派的大阪城到霓虹閃爍的道頓堀，每一處都充滿驚喜。無論是第一次造訪，還是再次回味，大阪總能用它的熱情與魅力，讓你留下難忘回憶。</p>
+        <div class="d-flex gap-3">
+          <div><img src="/assets/images/2025-week8/location/osaka-1.png" alt="#" class="w-100" style="border-bottom-left-radius:20px ; border-top-left-radius:20px ;"></div>
+          <div class="d-flex gap-3">
+            <div class="d-flex flex-column gap-3">
+              <div>
+                <div><img src="/assets/images/2025-week8/location/osaka-2.png" alt="#" class="w-100"></div>
+              </div>
+              <div>
+                <div><img src="/assets/images/2025-week8/location/osaka-3.png" alt="#" class="w-100"></div>
+              </div>
+            </div>
+            <div class="d-flex flex-column gap-3">
+              <div>
+                <div><img src="/assets/images/2025-week8/location/osaka-4.png" alt="#" class="w-100" style="border-top-right-radius: 20px;"></div>
+              </div>
+              <div>
+                <div class="position-relative">
+                  <a href="#" class="rounded-16 px-7 py-4 bg-neutral-0 text-primary fw-bold text-decoration-none position-absolute custom-btns" style="bottom: 10%; right: 10%;" ><span>查看更多</span></a>
+                  <img src="/assets/images/2025-week8/location/osaka-5.png" alt="#" class="w-100" style="border-bottom-right-radius:  20px;">
+                </div>
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+     </div>
+    <!-- footer -->
+    <div class="bg-neutral-100" style="padding-bottom: 120px; padding-top: 120px;">
+      <div class="container d-lg-flex justify-content-between align-items-center">
+        <div c>
+          <img src="https://hex2025-f2e-live-week7and8.pages.dev/white-logo.svg" alt="#" class="mb-7" style="width:250px; height:auto;">
+          <ul class="list-unstyled d-lg-flex ">
+            <li><a class="text-neutral-0 text-decoration-none p-2" href="#">常見問題</a></li>
+            <li><a class="text-neutral-0 text-decoration-none p-2" href="#">關於我們</a></li>
+            <li><a class="text-neutral-0 text-decoration-none p-2" href="#">隱私權政策</a></li>
+            <li><a class="text-neutral-0 text-decoration-none p-2" href="#">使用者條款</a></li>
+          </ul>
+        </div>
+        <div>
+          <div class="d-flex justify-content-lg-end mb-7 ">
+            <div>
+            <a href="#" class="p-2">
+            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_187_46432)">
+<path opacity="0.7" d="M20 1C30.7696 1 39.5 9.73045 39.5 20.5C39.5 31.2696 30.7696 40 20 40C9.23045 40 0.5 31.2696 0.5 20.5C0.5 9.73045 9.23045 1 20 1Z" stroke="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M29 19.5263C29 15.652 24.9625 12.5 20 12.5C15.0377 12.5 11 15.652 11 19.5263C11 22.9994 14.2019 25.9086 18.527 26.4589C18.8199 26.5196 19.2188 26.6451 19.3198 26.886C19.4106 27.1047 19.3793 27.4474 19.3488 27.6685C19.3488 27.6685 19.2436 28.2796 19.2204 28.41C19.1814 28.6288 19.0395 29.2659 20 28.8767C20.9608 28.4874 25.1828 25.9404 27.071 23.8494C28.3754 22.4736 29 21.077 29 19.5263ZM14.4146 21.6339C14.1861 21.6339 14 21.4408 14 21.203V17.9397C14 17.7022 14.2116 17.5089 14.48 17.5089C14.7484 17.5089 14.9 17.7006 14.9 17.9397V20.7724H15.9854C16.2143 20.7724 16.4 20.9657 16.4 21.203C16.4 21.4408 16.2143 21.6339 15.9854 21.6339H14.4146ZM18.2 21.203C18.2 21.4408 17.9981 21.6339 17.7501 21.6339C17.5019 21.6339 17.3 21.4408 17.3 21.203V17.9397C17.3 17.7022 17.5019 17.5089 17.7501 17.5089C17.9981 17.5089 18.2 17.7022 18.2 17.9397V21.203ZM22.7 21.203C22.7 21.389 22.5717 21.5532 22.3797 21.6116C22.3316 21.6265 22.2813 21.6339 22.2309 21.6339C22.0849 21.6339 21.9449 21.5696 21.8566 21.4616L20.0372 19.1842V21.203C20.0372 21.4408 19.8272 21.6339 19.5687 21.6339C19.3103 21.6339 19.1 21.4408 19.1 21.203V17.9397C19.1 17.7541 19.2288 17.5899 19.4203 17.5312C19.4686 17.5162 19.5187 17.5089 19.5691 17.5089C19.7153 17.5089 19.8554 17.5731 19.9431 17.6812L21.7631 19.9587V17.9397C21.7631 17.7022 21.9735 17.5089 22.2316 17.5089C22.4902 17.5089 22.7 17.7022 22.7 17.9397V21.203ZM25.5853 19.1407C25.8142 19.1407 26 19.3339 26 19.5715C26 19.8088 25.8142 20.002 25.5853 20.002H24.4294V20.7724H25.5853C25.8138 20.7724 26 20.9657 26 21.203C26 21.4408 25.8138 21.6339 25.5853 21.6339H24.0145C23.7863 21.6339 23.6 21.4408 23.6 21.203V19.5726V19.5715V17.9397C23.6 17.7022 23.7859 17.5089 24.0145 17.5089H25.5853C25.8142 17.5089 26 17.7022 26 17.9397C26 18.1772 25.8142 18.3702 25.5853 18.3702H24.4294V19.1407H25.5853Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_187_46432">
+<rect width="40" height="40" fill="white" transform="translate(0 0.5)"/>
+</clipPath>
+</defs>
+</svg>
+            </a>
+          </div>
+          <div>
+            <a href="#" class="p-2">
+            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_187_46435)">
+<path opacity="0.7" d="M20 1C30.7696 1 39.5 9.73045 39.5 20.5C39.5 31.2696 30.7696 40 20 40C9.23045 40 0.5 31.2696 0.5 20.5C0.5 9.73045 9.23045 1 20 1Z" stroke="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M20 12.4946C20.855 12.4946 21.732 12.5166 22.582 12.5526L23.586 12.6006L24.547 12.6576L25.447 12.7186L26.269 12.7826C27.161 12.8509 28.0004 13.2316 28.6395 13.8577C29.2786 14.4838 29.6764 15.3152 29.763 16.2056L29.803 16.6306L29.878 17.5406C29.948 18.4836 30 19.5116 30 20.4946C30 21.4776 29.948 22.5056 29.878 23.4486L29.803 24.3586C29.79 24.5046 29.777 24.6456 29.763 24.7836C29.6764 25.6742 29.2784 26.5058 28.6391 27.1319C27.9999 27.758 27.1602 28.1386 26.268 28.2066L25.448 28.2696L24.548 28.3316L23.586 28.3886L22.582 28.4366C21.732 28.4726 20.855 28.4946 20 28.4946C19.145 28.4946 18.268 28.4726 17.418 28.4366L16.414 28.3886L15.453 28.3316L14.553 28.2696L13.731 28.2066C12.839 28.1384 11.9996 27.7577 11.3605 27.1316C10.7214 26.5055 10.3236 25.6741 10.237 24.7836L10.197 24.3586L10.122 23.4486C10.0455 22.4658 10.0048 21.4804 10 20.4946C10 19.5116 10.052 18.4836 10.122 17.5406L10.197 16.6306C10.21 16.4846 10.223 16.3436 10.237 16.2056C10.3235 15.3153 10.7212 14.484 11.3601 13.858C11.999 13.2319 12.8381 12.8511 13.73 12.7826L14.551 12.7186L15.451 12.6576L16.413 12.6006L17.417 12.5526C18.268 12.5166 19.145 12.4946 20 12.4946ZM18 18.0696V22.9196C18 23.3816 18.5 23.6696 18.9 23.4396L23.1 21.0146C23.1914 20.962 23.2673 20.8863 23.3201 20.795C23.3729 20.7037 23.4007 20.6001 23.4007 20.4946C23.4007 20.3892 23.3729 20.2856 23.3201 20.1943C23.2673 20.103 23.1914 20.0272 23.1 19.9746L18.9 17.5506C18.8088 17.498 18.7053 17.4702 18.5999 17.4702C18.4945 17.4703 18.3911 17.498 18.2998 17.5507C18.2086 17.6034 18.1329 17.6792 18.0802 17.7705C18.0276 17.8618 17.9999 17.9653 18 18.0706V18.0696Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_187_46435">
+<rect width="40" height="40" fill="white" transform="translate(0 0.5)"/>
+</clipPath>
+</defs>
+</svg>
+            
+            </a>
+          </div>
+          <div>
+            <a href="#" class="p-2">
+            <svg width="40" height="41" viewBox="0 0 40 41" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_187_46438)">
+<path opacity="0.7" d="M20 1C30.7696 1 39.5 9.73045 39.5 20.5C39.5 31.2696 30.7696 40 20 40C9.23045 40 0.5 31.2696 0.5 20.5C0.5 9.73045 9.23045 1 20 1Z" stroke="white"/>
+<path fill-rule="evenodd" clip-rule="evenodd" d="M21.5983 21.4736H24.1413L24.5219 18.5404H21.5983V16.6677C21.5983 15.8184 21.8357 15.2397 23.0615 15.2397L24.625 15.239V12.6156C24.3545 12.5799 23.4265 12.5 22.3467 12.5C20.0926 12.5 18.5494 13.8669 18.5494 16.3773V18.5404H16V21.4736H18.5494V29H21.5983V21.4736Z" fill="white"/>
+</g>
+<defs>
+<clipPath id="clip0_187_46438">
+<rect width="40" height="40" fill="white" transform="translate(0 0.5)"/>
+</clipPath>
+</defs>
+</svg>
+            </a>
+          </div>
+          </div>
+          <p style="font-size: 14px; color:#D4D4D4 ;">copyright © 2025 ZOBAA 旅遊網站 All Rights Reserved.</p>
+        </div>
+      </div>
+    </div>
+    <!-- script -->
+    <script>
+window.addEventListener("scroll", function() {
+  const header = document.querySelector(".header-fixed");
+  if (window.scrollY > 50) { // 滾動超過 50px
+    header.classList.add("scrolled");
+  } else {
+    header.classList.remove("scrolled");
+  }
+});
+</script>
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="../main.js"></script>
+  </body>
+</html>
