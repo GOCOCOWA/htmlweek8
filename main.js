@@ -114,18 +114,19 @@ const swiperm = new Swiper(".mySwiperm", {
     slidesPerView: 1,
     spaceBetween: 24,
     loop: true,
+    autoplay:true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
     },
     navigation: {
-      nextEl: ".swiper-nextm",
-      prevEl: ".swiper-prevm",
+      nextEl: ".swiper-nexto",
+      prevEl: ".swiper-prevo",
     },
     breakpoints: {
      
       0: { slidesPerView: 1 },
-      768: { slidesPerView: 2.5 }
+      768: { slidesPerView: 4 }
     }
   });
 
