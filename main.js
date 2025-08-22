@@ -3,6 +3,8 @@ import './assets/scss/all.scss';
 const swiper = new Swiper(".mySwiper", {
   slidesPerView: 2.5,
   spaceBetween: 24,
+  loop: true,
+  autoplay:true,
     breakpoints: {
     // 手機 (0px 以上)
     0: {
@@ -46,6 +48,8 @@ const swiper = new Swiper(".mySwiper", {
 const swipers = new Swiper(".mySwipers", {
     slidesPerView: 1,
     spaceBetween: 24,
+    loop: true,
+    autoplay:true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -89,6 +93,8 @@ const swipers = new Swiper(".mySwipers", {
 const swiperm = new Swiper(".mySwiperm", {
     slidesPerView: 1,
     spaceBetween: 24,
+    loop: true,
+    autoplay:true,
     pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -101,6 +107,25 @@ const swiperm = new Swiper(".mySwiperm", {
      
       0: { slidesPerView: 1.1 },
       992: { slidesPerView: 4 }
+    }
+  });
+
+  const swipero = new Swiper(".mySwipero", {
+    slidesPerView: 1,
+    spaceBetween: 24,
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+    },
+    navigation: {
+      nextEl: ".swiper-nextm",
+      prevEl: ".swiper-prevm",
+    },
+    breakpoints: {
+     
+      0: { slidesPerView: 1 },
+      768: { slidesPerView: 2.5 }
     }
   });
 
