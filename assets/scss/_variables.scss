@@ -6,6 +6,14 @@
 // Color system
 
 // scss-docs-start gray-color-variables
+$neutral-100: #000000;
+$neutral-80: #4B4B4B;
+$neutral-60: #909090;
+$neutral-40: #909090;
+$neutral-15: #F4F4F4;
+$neutral-10: #F9F9F9;
+$neutral-0: #FFFFFF;
+
 $white:    #fff !default;
 $gray-100: #f8f9fa !default;
 $gray-200: #e9ecef !default;
@@ -298,18 +306,109 @@ $cyans: (
 // fusv-enable
 
 // scss-docs-start theme-color-variables
-$primary:       $blue !default;
+$primary-120: #2B211C;
+$primary-100: #4A3830;
+$primary-80: #886658;
+$primary-60: #A37F71;
+$primary-40: #CBB6AF;
+$primary-10: #F3EEEC;
+$primary: $primary-100;
+
+$success-120: #48970F;
+$success-100: #7CD31F;
+$success-20: #DDFAA5;
+$success-10: #F0FCD1;
+$success:$success-100;
+
+$info-120: #1566B5;
+$info-100: #2AAFFC;
+$info-20: #A9EFFE;
+$info-10: #D4F9FE;
+$info: $info-100;
+
+$danger-120: #B71D4F;
+$danger-100: #ff3a55;
+$danger-20: #FFBBB0;
+$danger-10: #FFE0D7;
+$danger: $danger-100;
+//$primary:       $blue !default;
 $secondary:     $gray-600 !default;
-$success:       $green !default;
+//$success:       $green !default;
 $info:          $cyan !default;
 $warning:       $yellow !default;
-$danger:        $red !default;
+//$danger:        $red !default;
 $light:         $gray-100 !default;
 $dark:          $gray-900 !default;
 // scss-docs-end theme-color-variables
 
 // scss-docs-start theme-colors-map
 $theme-colors: (
+  "primary-120": #2B211C,
+  "primary-100": #4A3830,
+  "primary-80": #886658,
+  "primary-60": #A37F71,
+  "primary-40": #CBB6AF,
+  "primary-10": #F3EEEC,
+  
+  "success-120": #48970F,
+  "success-100": #7CD31F,
+  "success-20": #DDFAA5,
+  "success-10": #F0FCD1,
+  
+
+  "info-120": #1566B5,
+  "info-100": #2AAFFC,
+  "info-20": #A9EFFE,
+  "info-10": #D4F9FE,
+
+  "danger-120": #B71D4F,
+  "danger-100": #ff3a55,
+  "danger-20": #FFBBB0,
+  "danger-10": #FFE0D7,
+
+  "neutral-100": #000000,
+  "neutral-80": #4B4B4B,
+  "neutral-60": #909090,
+  "neutral-40": #909090,
+  "neutral-15": #F4F4F4,
+  "neutral-10": #F9F9F9,
+  "neutral-0": #FFFFFF,
+
+  // "primary-120" : primary-120,
+  // "primary-100" : primary-100,
+  // "primary-80" : primary-80,
+  // "primary-60" : primary-60,
+  // "primary-40" : primary-40,
+  // "primary-10" : primary-10,
+  // "primary" : primary-100,
+
+  // "success-120" : success-120,
+  // "success-100" : success-100,
+  // "success-40" : success-20,
+  // "success-10" : success-10,
+  // "success" : success-100,
+
+
+  // "info-120" : info-120,
+  // "info-100" : info-100,
+  // "info-40" : info-20,
+  // "info-10" : info-10,
+  // "info" : info-100,
+  
+  // "danger-120" : danger-120,
+  // "danger-100" : danger-100,
+  // "danger-40" : danger-20,
+  // "danger-10" : danger-10,
+  // "danger" : danger-100,
+
+  // "neutral-100" : neutral-100,
+  // "neutral-80" : neutral-80,
+  // "neutral-60" : neutral-60,
+  // "neutral-40" : neutral-40,
+  // "neutral-15" : neutral-15,
+  // "neutral-10" : neutral-10,
+  // "neutral-0" : neutral-0,
+
   "primary":    $primary,
   "secondary":  $secondary,
   "success":    $success,
@@ -409,12 +508,24 @@ $gradient: linear-gradient(180deg, rgba($white, .15), rgba($white, 0)) !default;
 // scss-docs-start spacer-variables-maps
 $spacer: 1rem !default;
 $spacers: (
+  // 0: 0,
+  // 1: $spacer * .25,
+  // 2: $spacer * .5,
+  // 3: $spacer,
+  // 4: $spacer * 1.5,
+  // 5: $spacer * 3,
   0: 0,
   1: $spacer * .25,
   2: $spacer * .5,
-  3: $spacer,
-  4: $spacer * 1.5,
-  5: $spacer * 3,
+  3: $spacer * .75,
+  4: $spacer * 1,
+  5: $spacer * 1.25,
+  6: $spacer * 1.5,
+  7: $spacer * 2,
+  8: $spacer * 3,
+  9: $spacer * 4,
+  10: $spacer * 4.5,
+  11: $spacer * 5,
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -606,7 +717,7 @@ $aspect-ratios: (
 $font-family-sans-serif:      system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
 $font-family-monospace:       SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace !default;
 // stylelint-enable value-keyword-case
-$font-family-base:            var(--#{$prefix}font-sans-serif) !default;
+$font-family-base:            "Noto Sans TC";//var(--#{$prefix}font-sans-serif) !default;
 $font-family-code:            var(--#{$prefix}font-monospace) !default;
 
 // $font-size-root affects the value of `rem`, which is used for as well font sizes, paddings, and margins
@@ -630,12 +741,20 @@ $line-height-base:            1.5 !default;
 $line-height-sm:              1.25 !default;
 $line-height-lg:              2 !default;
 
-$h1-font-size:                $font-size-base * 2.5 !default;
-$h2-font-size:                $font-size-base * 2 !default;
-$h3-font-size:                $font-size-base * 1.75 !default;
-$h4-font-size:                $font-size-base * 1.5 !default;
-$h5-font-size:                $font-size-base * 1.25 !default;
-$h6-font-size:                $font-size-base !default;
+$h1-font-size:                $font-size-base * 3 !default;
+// $h2-font-size:                $font-size-base * 2 !default;
+$h2-font-size:                $font-size-base * 2.5 !default;
+//$h3-font-size:                $font-size-base * 1.75 !default;
+$h3-font-size:                $font-size-base * 2 !default;
+//$h4-font-size:                $font-size-base * 1.5 !default;
+$h4-font-size:                $font-size-base * 1.75 !default;
+//$h5-font-size:                $font-size-base * 1.25 !default;
+$h5-font-size:                $font-size-base * 1.5 !default;
+$h6-font-size:                $font-size-base * 1.25 !default;
+//$h6-font-size:                $font-size-base !default;
+$h7-font-size:                $font-size-base !default;
+$h8-font-size:                $font-size-base * 0.875 !default;
+$h9-font-size:                $font-size-base * 0.75 !default;
 // scss-docs-end font-variables
 
 // scss-docs-start font-sizes
@@ -645,7 +764,10 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
+  7: $h7-font-size,
+  8: $h8-font-size,
+  9: $h9-font-size
 ) !default;
 // scss-docs-end font-sizes
 
