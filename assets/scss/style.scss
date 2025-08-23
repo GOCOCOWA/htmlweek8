@@ -195,7 +195,7 @@ p {
   width: 100%;
   z-index: 500;
 
-  background: rgba(255, 251, 251, 0.9); /* 初始全透明 */
+  background: transparent; /* 初始全透明 */
   border-bottom: none;
   transition:  background 0.2s ease, border-bottom 0.2s ease; //background 0.01s ease, border-bottom 0.01s ease, backdrop-filter 0.01s ease;
 }
