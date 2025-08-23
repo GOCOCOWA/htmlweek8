@@ -193,17 +193,17 @@ p {
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 1000;
+  z-index: 500;
 
-  background: transparent; /* 初始全透明 */
+  background: rgba(255, 251, 251, 0.9); /* 初始全透明 */
   border-bottom: none;
-  transition: background 0.01s ease, border-bottom 0.01s ease, backdrop-filter 0.01s ease;
+  transition:  background 0.2s ease, border-bottom 0.2s ease; //background 0.01s ease, border-bottom 0.01s ease, backdrop-filter 0.01s ease;
 }
 
 .header-fixed.scrolled {
   background: rgba(255, 251, 251, 0.4); /* 半透明白底 */
-  backdrop-filter: blur(10px);          
-  -webkit-backdrop-filter: blur(10px);  /* Safari 支援 */
+  backdrop-filter: blur(4px);          
+  -webkit-backdrop-filter: blur(4px);  /* Safari 支援 */
   border-bottom: 1px solid rgba(0,0,0,0.05);
 }
 
@@ -211,6 +211,7 @@ p {
 .header-fixed i:hover {
   color: #000; /* 滑過去變深一點 */
 }
+
 
 
 
