@@ -327,3 +327,23 @@ header {
 }
 
 
+
+
+.nav-tabs .nav-link {
+  font-weight: 600;
+  color: #4B4B4B;   /* 預設灰色 */
+  border: none;  /* 拿掉預設邊框 */
+}
+
+.nav-tabs .nav-link:hover {
+  color: #4A3830;   /* hover 深色 */
+}
+
+.nav-tabs .nav-link.active {
+  color: #4A3830;   /* active 深色 */
+  border: none;  /* 移除 Bootstrap 原本的 border */
+  border-bottom: 3px solid #000; /* 自訂底線 */
+  background: transparent;       /* 移除背景 */
+}
+
+

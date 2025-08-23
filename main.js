@@ -126,7 +126,7 @@ const swiperm = new Swiper(".mySwiperm", {
     breakpoints: {
      
       0: { slidesPerView: 1 },
-      768: { slidesPerView: 4 }
+      992: { slidesPerView: 4 }
     }
   });
 
